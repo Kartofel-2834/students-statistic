@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 1em 2em;
+  cursor: default;
+  margin: 2em 0;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.75em;
+  width: fit-content;
+}
+
+.card h2 {
+  margin: 0;
+  margin-bottom: 1.25em;
+}

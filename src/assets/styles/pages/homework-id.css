@@ -1,0 +1,25 @@
+.howework__info {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+}
+
+.homework__info__exercise {
+  white-space: nowrap;
+}
+
+.homework__answers-modal .modal {
+  width: 45vw;
+  height: 80vh;
+}
+
+.homework__answers-modal textarea {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.homework__answers-modal .button {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}

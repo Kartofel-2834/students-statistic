@@ -1,0 +1,45 @@
+.modal-backdrop,
+.modal {
+  transition: 0.15s linear;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+  background-color: #0000004d;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  cursor: default;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 1.25em;
+}
+
+.modal-backdrop_hidden {
+  background-color: transparent;
+}
+
+.modal-backdrop_hidden .modal {
+  opacity: 0;
+  transform: translateY(20px);
+}

@@ -1,0 +1,37 @@
+.input-inner {
+  display: flex;
+  width: 100%;
+}
+
+.input-inner_number .input {
+  text-align: center;
+  border-radius: 0;
+}
+
+.input {
+  width: -webkit-fill-available;
+  appearance: none;
+  outline: none;
+  border: 2px solid var(--text-color);
+  font-size: 1.1em;
+  padding: 0.5em 0.75em;
+  border-radius: 8px;
+  transition: 0.15s linear;
+}
+
+.input:focus {
+  border-color: var(--simple-green);
+}
+
+.input-inner__increment-button {
+  border-radius: 8px 0 0 8px;
+}
+
+.input-inner__increment-button .button__active,
+.input-inner__increment-button .button__passive {
+  padding: 0.75em 1.1em;
+}
+
+.input-inner__increment-button:last-child {
+  border-radius: 0 8px 8px 0;
+}

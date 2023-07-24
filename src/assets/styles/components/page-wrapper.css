@@ -1,0 +1,22 @@
+@keyframes page-wrapper-mount {
+  from {
+    transform: translateY(4em);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.page-wrapper {
+  animation-duration: 0.35s;
+  animation-name: page-wrapper-mount;
+}
+
+.page-wrapper .page-wrapper__header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

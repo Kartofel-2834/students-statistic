@@ -1,20 +1,54 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+
+// Pupils
+import Pupils from "@/views/pupils/index.vue";
+import PupilId from "@/views/pupils/id.vue";
+
+// Homeworks
+import Homeworks from "@/views/homeworks/index.vue";
+import HomeworkId from "@/views/homeworks/id.vue";
+import HomeworkCreationForm from "@/views/homeworks/add.vue";
+
+// Visits
+import Visits from "@/views/visits/index.vue";
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    name: "pupilsMirror",
+    component: Pupils,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/pupils",
+    name: "pupils",
+    component: Pupils,
+  },
+  {
+    path: "/pupils/:id",
+    name: "pupil-id",
+    component: PupilId,
+  },
+
+  {
+    path: "/homeworks",
+    name: "homeworks",
+    component: Homeworks,
+  },
+  {
+    path: "/homeworks/:id",
+    name: "homework-id",
+    component: HomeworkId,
+  },
+  {
+    path: "/homeworks/add",
+    name: "homework-creation-form",
+    component: HomeworkCreationForm,
+  },
+
+  {
+    path: "/visits",
+    name: "visits",
+    component: Visits,
   },
 ];
 

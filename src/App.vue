@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <!-- Navigation -->
+  <nav class="navigation with-shadow">
+    <h3>Навигация</h3>
+
+    <PageLink href="/" group="pupils" icon="mdi:user-group"> Ученики </PageLink>
+
+    <PageLink href="/homeworks" group="homeworks" icon="ic:round-home-work">
+      Домашние работы
+    </PageLink>
+
+    <PageLink href="/visits" group="visits" icon="ph:check-circle-fill">
+      Посещаемость
+    </PageLink>
   </nav>
-  <router-view />
+
+  <!-- Page Content -->
+  <div class="wrapper">
+    <router-view />
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style src="@/assets/styles/style.css" />
 
-nav {
-  padding: 30px;
-}
+<script>
+import PageLink from "@/components/PageLink";
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+export default {
+  components: { PageLink },
+};
+</script>

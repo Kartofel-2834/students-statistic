@@ -1,0 +1,21 @@
+.homework-form-wrapper {
+  min-height: 30vh;
+}
+
+.exercises-counter {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1.5em;
+  column-gap: 3em;
+}
+
+.exercises-counter input {
+  width: 8em;
+}
+
+.exercises-counter__exercise__label {
+  margin-bottom: 0.5em;
+}
+
+

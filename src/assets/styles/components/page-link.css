@@ -1,0 +1,22 @@
+.page-link {
+  display: flex;
+  align-items: center;
+
+  padding: 1em;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--simple-grey);
+  transition: 0.15s linear;
+}
+
+.page-link svg {
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.page-link_active,
+.router-link-active {
+  color: var(--simple-green);
+  background-color: var(--green-grey);
+}

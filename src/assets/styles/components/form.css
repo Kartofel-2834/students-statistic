@@ -1,0 +1,17 @@
+.form {
+}
+
+.form .button:not(.form__part .button) {
+  margin: auto;
+  margin-top: 2em;
+}
+
+.form__part {
+  margin-top: 2em;
+}
+
+.form__part__label {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.75em;
+}

@@ -1,0 +1,111 @@
+:root {
+  --main-color: white;
+
+  --simple-green: #00ab55;
+  --simple-red: #d54e4e;
+  --simple-blue: #3a97cd;
+
+  --light-red: #fac8c8;
+  --light-green: #c8facd;
+  --light-blue: #c8ecfa;
+
+  --green-grey: #ebf9f1;
+  --simple-grey: #7e8b97;
+
+  --text-color: #2c3e50;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  cursor: default;
+  user-select: none;
+}
+
+h2 {
+  font-size: 1.45em;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  appearance: none;
+  outline: none;
+  border: 2px solid var(--text-color);
+  padding: 0.5em 0.75em;
+  border-radius: 8px;
+  transition: 0.15s linear;
+}
+
+input:focus {
+  border-color: var(--simple-green);
+}
+
+textarea:focus {
+  border-color: var(--simple-blue);
+}
+
+textarea {
+  font-size: 1.25em;
+  resize: none;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 17.5%;
+  height: 100vh;
+  padding: 0 1em;
+  border-right: 3px solid var(--simple-green);
+  background-color: var(--main-color);
+
+  z-index: 100;
+}
+
+.navigation .page-link {
+  margin-top: 0.5em;
+}
+
+.wrapper {
+  width: calc(77%);
+  max-width: calc(77%);
+  font-size: 1em;
+  padding: 0 2em;
+  margin: 2em 0;
+}
+
+.buttons-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.with-shadow {
+  box-shadow: 0px 4px 17px -6px rgba(34, 60, 80, 0.2);
+}
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,76 @@
+.select {
+  position: relative;
+  max-width: 15em;
+}
+
+.select__header,
+.select__options-list {
+  width: -webkit-fill-available;
+  overflow: hidden;
+}
+
+.select__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  padding: 0.25em 0.5em;
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  transition: 0.15s linear;
+}
+
+.select__header span {
+  margin-left: 0.25em;
+}
+
+.select__header svg {
+  transform: scaleY(-1);
+  font-size: 1.75em;
+  transition: 0.15s linear;
+}
+
+.select__options-list {
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+  margin-top: 0.5em;
+  border-radius: 8px;
+  padding: 0.25em;
+  background-color: var(--main-color);
+  border: 2px solid var(--text-color);
+  transform-origin: top;
+  transform: translateY(-10px);
+  transition: 0.15s linear;
+}
+
+.select__options-list__option {
+  font-weight: 500;
+  border-bottom: 1.5px solid var(--text-color);
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+}
+
+.select__options-list__option:last-child {
+  border: none;
+}
+
+.select__options-list__option:hover,
+.select__options-list__option_current {
+  background-color: var(--light-green);
+}
+
+.select_opened .select__header {
+  border-color: var(--simple-green);
+}
+
+.select_opened .select__header svg {
+  transform: none;
+}
+
+.select_opened .select__options-list {
+  transform: none;
+  opacity: 1;
+}

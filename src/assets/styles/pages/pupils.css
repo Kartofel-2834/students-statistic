@@ -1,0 +1,11 @@
+.pupils-form-modal .modal {
+  width: 25vw;
+}
+
+.pupils-form-modal .form {
+  width: 80%;
+}
+
+.pupils-form-modal .form .select {
+  max-width: none;
+}
